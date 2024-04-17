@@ -4,17 +4,17 @@ public class Main {
     public static void main(String[] args) {
         System.out.println( "Задача 1");
         byte variableOne = 1;
-        System.out.println (" Значение переменной variableone с типом byte равно" + variableOne );
+        System.out.println(" Значение переменной variableOne с типом byte равно" + variableOne);
         short variableTwo = 300;
-        System.out.println( "Значение переменной variableoTwo с типом short равно" + variableTwo );
+        System.out.println("Значение переменной variableTwo с типом short равно" + variableTwo);
         int variableThree = 35000;
-        System.out.println( "Значение переменной variableoThree с типом int  равно" + variableThree );
+        System.out.println("Значение переменной variableThree с типом int  равно" + variableThree);
         long variableFour = 3000000L;
-        System.out.println( "Значение переменной variableoFour с типом long равно" + variableFour );
+        System.out.println("Значение переменной variableFour с типом long равно" + variableFour);
         float variableFive = 3.4f;
-        System.out.println( "Значение переменной variableoFive с типом float равно" + variableFive );
+        System.out.println("Значение переменной variableFive с типом float равно" + variableFive);
         double variableSix = -1.7E+20;
-        System.out.println( "Значение переменной variableoSix с типом double равно" + variableSix );
+        System.out.println("Значение переменной variableSix с типом double равно" + variableSix);
 
         System.out.println( "Задача 2");
         float a = 27.12f;
@@ -55,9 +55,57 @@ public class Main {
         int totalGradesAtSchool = totalCansOfPaint / forOneClassOfPaintCans;
         int whitePaintForAllClasses = totalGradesAtSchool * whitePaintForOneClass;
         int brownPaintForAllClasses = totalGradesAtSchool * brownPaintForOneClass;
-        System.out.println( " В школе, где 20 классов, нужно 40 банок белой краски и 80 банок коричневой краски");
+        System.out.println(" В школе, где" + totalGradesAtSchool + "классов, нужно" + whitePaintForAllClasses + "банок белой краски и " + brownPaintForAllClasses + " банок коричневой краски");
 
         System.out.println( "Задача 6");
+        byte weightOfOneBanana = 80;
+        byte weightOfOneMilk = 105;
+        byte weightOfOneiceCream = 100;
+        byte weightOfOneEgg = 70;
+        int massOfAllBananas = weightOfOneBanana * 5;
+        int massOfAllMilk = weightOfOneMilk * 2;
+        int massOfAllEgg = weightOfOneEgg * 4;
+        int massOfAllIceCream = weightOfOneiceCream * 2;
+        float massOfAllProducts = massOfAllBananas + massOfAllMilk + massOfAllEgg + massOfAllIceCream;
+        float kgMassAllPoducts = massOfAllProducts / 1000;
+        System.out.println("Вес спортзавтрака в граммах составляет " + massOfAllProducts);
+        System.out.println("Вес спортзавтрака в килограммах составляет" + kgMassAllPoducts);
+
+        System.out.println(" Задача 7");
+        short kiloNeedToBeLost = 7;
+        short gramPerDay = 250;
+        int gramNeededToBeLost = kiloNeedToBeLost * 1000;
+        int days = gramNeededToBeLost / gramPerDay;
+        System.out.println(days + "дней потребуется спортсмену для того чтобы скинуть 7 кг");
+        short gramDay = 500;
+        int gramNeedToBeLost = kiloNeedToBeLost * 1000;
+        int justDays = gramNeedToBeLost / gramDay;
+        System.out.println(justDays + "дней потребуется спортсмену для того чтобы скинуть 7 кг");
+
+        System.out.println(" Задача 8");
+        int salaryMasha = 67760;
+        int salaryDenis = 83690;
+        int salaryKristina = 76230;
+        double procentIncrease = 10;
+        double procentIncreaseSalary = procentIncrease / 100;
+        double increasedSalaryM = salaryMasha * procentIncreaseSalary;
+        double increasedSalaryD = salaryDenis * procentIncreaseSalary;
+        double increasedSalaryK = salaryKristina * procentIncreaseSalary;
+        double newSalaryM = salaryMasha + increasedSalaryM;
+        double newSalaryD = salaryDenis + increasedSalaryD;
+        double newSalaryK = salaryKristina + increasedSalaryK;
+        double TotalSalaryExYearM = salaryMasha * 12;
+        double TotalSalaryNewYearM = newSalaryM * 12;
+        double salaryDifferenceM = TotalSalaryNewYearM - TotalSalaryExYearM;
+        double TotalSalaryExYearD = salaryDenis * 12;
+        double TotalSalaryNewYearD = newSalaryD * 12;
+        double salaryDifferenceD = TotalSalaryNewYearD - TotalSalaryExYearD;
+        double TotalSalaryExYearK = salaryKristina * 12;
+        double TotalSalaryNewYearK = newSalaryK * 12;
+        double salaryDifferenceK = TotalSalaryNewYearK - TotalSalaryExYearK;
+        System.out.println(" Маша теперь получает" + newSalaryM + "рублей. Годовой доход вырос на " + salaryDifferenceM + "рублей");
+        System.out.println(" Денис теперь получает" + newSalaryD + "рублей. Годовой доход вырос на " + salaryDifferenceD + "рублей");
+        System.out.println(" Кристина теперь получает" + newSalaryK + "рублей. Годовой доход вырос на " + salaryDifferenceK + "рублей");
 
 
     }
