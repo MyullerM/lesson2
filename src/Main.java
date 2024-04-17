@@ -103,9 +103,9 @@ public class Main {
         double TotalSalaryExYearK = salaryKristina * 12;
         double TotalSalaryNewYearK = newSalaryK * 12;
         double salaryDifferenceK = TotalSalaryNewYearK - TotalSalaryExYearK;
-        System.out.println(" Маша теперь получает" + newSalaryM + "рублей. Годовой доход вырос на " + salaryDifferenceM + "рублей");
-        System.out.println(" Денис теперь получает" + newSalaryD + "рублей. Годовой доход вырос на " + salaryDifferenceD + "рублей");
-        System.out.println(" Кристина теперь получает" + newSalaryK + "рублей. Годовой доход вырос на " + salaryDifferenceK + "рублей");
+        System.out.println(" Маша теперь получает" + newSalaryM + "рублей. Годовой доход вырос на " + salaryDifferenceM + "рублей.");
+        System.out.println(" Денис теперь получает" + newSalaryD + "рублей. Годовой доход вырос на " + salaryDifferenceD + "рублей.");
+        System.out.println(" Кристина теперь получает" + newSalaryK + "рублей. Годовой доход вырос на " + salaryDifferenceK + "рублей.");
 
 
     }
